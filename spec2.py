@@ -16,7 +16,7 @@ public_ip = data[5].split(":")[1].strip()
 lb_ip = data[6].split(":")[1].strip()
 
 # Excel 파일 생성
-workbook = openpyxl.Workbook()
+workbook = openpyxl.load_workbook("server_specs.xlsx")
 sheet = workbook.active
 
 # 헤더 추가
